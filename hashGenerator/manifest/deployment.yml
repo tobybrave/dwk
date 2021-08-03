@@ -1,4 +1,4 @@
-appVersion: apps/v1
+appVersions: apps/v1
 kind: deployment
 metadata:
   name: randomhash
