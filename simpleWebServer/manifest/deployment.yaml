@@ -9,7 +9,7 @@ spec:
   replicas: 2
   template:
     metadata:
-      label:
+      labels:
         app: webserver
     spec:
       containers:
