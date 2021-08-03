@@ -1,2 +1,3 @@
 # dwk
-devops with kube
+## devops with kube
+This project repo is for practicing k8s
