@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webserver
+spec:
+  selector:
+    matchLabels:
+      app: webserver
+  replicas: 2
+  template:
+    metadata:
+      label:
+        app: webserver
+    spec:
+      containers:
+        - name: sws
+          image: tobybrave/sws
