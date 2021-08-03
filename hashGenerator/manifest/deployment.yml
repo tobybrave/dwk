@@ -1,0 +1,17 @@
+appVersion: apps/v1
+kind: deployment
+metadata:
+  name: randomhash
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: random-hash
+  template:
+    metadata:
+      labels:
+        app: random-hash
+    spec: 
+      containers:
+        - name: random-hash
+          image: tobybrave/random-hash
